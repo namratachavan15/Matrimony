@@ -22,8 +22,9 @@
 <img width="1920" height="969" alt="admin_starrate" src="https://github.com/user-attachments/assets/1accb4b6-c3d8-4801-8c58-e6c77f4da6fa" />
 <img width="1920" height="977" alt="admin_successstory" src="https://github.com/user-attachments/assets/c40da2fc-9538-47f1-9319-32962f80d2ba" />
 <img width="1920" height="970" alt="admin_testimonial" src="https://github.com/user-attachments/assets/746937d0-f23d-4f0c-99e6-8bac5027fa13" />
-<img width="1920"<img width="2880" height="2128" alt="profile-preview" src="https://github.com/user-attachments/assets/468e4f38-a547-4ad7-af7b-cdcf077653ba" />
- height="963" alt="admin_addabout" src="https://github.com/user-attachments/assets/b27b1bc0-10b2-401d-9ed1-2ffad974f148" />
+<img width="2880" height="2128" alt="profile-preview" src="https://github.com/user-attachments/assets/468e4f38-a547-4ad7-af7b-cdcf077653ba" />
+<img width="1920" height="963" alt="admin_addabout" src="https://github.com/user-attachments/assets/b27b1bc0-10b2-401d-9ed1-2ffad974f148" />
+
 <img width="1886" height="956" alt="profile_detailmodel" src="https://github.com/user-attachments/assets/3fd8bae5-0615-42f7-9f02-66cecb729aec" />
 <img width="2880" height="4004" alt="successstoriesgallery" src="https://github.com/user-attachments/assets/3ae9eec5-c860-4720-8981-1504ffa66116" />
 <img width="2859" height="3974" alt="user_dashboard" src="https://github.com/user-attachments/assets/1d0002b6-013c-407e-8122-8140682d522c" />
