@@ -1,0 +1,31 @@
+<img width="1920" height="951" alt="admin_dashboard" src="https://github.com/user-attachments/assets/404c7f2d-7fc6-4dcf-b594-104b0a12529c" />
+<img width="1920" height="955" alt="admin_adduser" src="https://github.com/user-attachments/assets/c6a8f3e2-c02c-4d57-b80d-908df08cbe68" />
+<img width="1920" height="962" alt="admin_addfamily" src="https://github.com/user-attachments/assets/e3dc4b37-03a8-49fd-8917-c634d5c81f3c" />
+<img width="1920" height="972" alt="admin_addotherinfo" src="https://github.com/user-attachments/assets/1baec772-edc8-47d3-a737-8320023db9af" />
+<img width="1920" height="974" alt="admin_addbiodata" src="https://github.com/user-attachments/assets/9d26bc6b-a840-4481-9f9b-00b8a33f5ae7" />
+<img width="1920" height="963" alt="admin_addcast" src="https://github.com/user-attachments/assets/168d8717-8850-447c-a77a-ea1006694395" />
+<img width="1920" height="968" alt="admin_addsubcast" src="https://github.com/user-attachments/assets/2bb4a639-8123-45c7-b5c1-89b31519a5f9" />
+<img width="1920" height="972" alt="admin_addgotra" src="https://github.com/user-attachments/assets/cbde1e2c-9e43-47a5-840e-5e85eef9703f" />
+<img width="1920" height="966" alt="admin_addnadi" src="https://github.com/user-attachments/assets/3d107051-8a80-45f0-92ff-c67d1837e63d" />
+<img width="1920" height="968" alt="admin_addnakshtra" src="https://github.com/user-attachments/assets/0a8d684a-1920-4ca7-a360-b3120328cb25" />
+<img width="1920" height="960" alt="admin_addrashi" src="https://github.com/user-attachments/assets/0fd26e53-95de-45a7-9f49-d731c2bd0e1e" />
+<img width="1920" height="968" alt="admin_addgan" src="https://github.com/user-attachments/assets/9567d802-934a-4ee1-80f2-616c35d9ace0" />
+<img width="1920" height="963" alt="admin_addeducation" src="https://github.com/user-attachments/assets/ed0026f4-a35d-4c6c-a831-5d3800d797ce" />
+<img width="1920" height="963" alt="admin_addheight" src="https://github.com/user-attachments/assets/2146dae2-7771-4a92-9135-9aeac90a2867" />
+<img width="1920" height="959" alt="admin_addmarriagetype" src="https://github.com/user-attachments/assets/84ad0620-1a00-4c60-9b78-e9a76ea6e364" />
+<img width="1920" height="977" alt="admin_addcountry" src="https://github.com/user-attachments/assets/c5ba5f4d-99f7-4012-b204-b573323c6ce6" />
+<img width="1920" height="965" alt="admin_extendviewcount" src="https://github.com/user-attachments/assets/e94715bd-b552-4c39-b554-a424fa649c0f" />
+<img width="1920" height="977" alt="admin_activeuser" src="https://github.com/user-attachments/assets/035ab9f9-c863-4c27-8100-c6d9b7584cda" />
+<img width="1920" height="973" alt="admin_deactiveuser" src="https://github.com/user-attachments/assets/2e58b721-89b9-45e2-a0e4-9c3f67b462fe" />
+<img width="1920" height="974" alt="admin_expireplan" src="https://github.com/user-attachments/assets/c8abfaa2-9578-4970-abe0-8d944df62aa9" />
+<img width="1920" height="967" alt="admin_renewuser" src="https://github.com/user-attachments/assets/b26eb1c1-1d38-4d5d-b2bb-f5e1ace82ca3" />
+<img width="1920" height="969" alt="admin_starrate" src="https://github.com/user-attachments/assets/1accb4b6-c3d8-4801-8c58-e6c77f4da6fa" />
+<img width="1920" height="977" alt="admin_successstory" src="https://github.com/user-attachments/assets/c40da2fc-9538-47f1-9319-32962f80d2ba" />
+<img width="1920" height="970" alt="admin_testimonial" src="https://github.com/user-attachments/assets/746937d0-f23d-4f0c-99e6-8bac5027fa13" />
+<img width="1920"<img width="2880" height="2128" alt="profile-preview" src="https://github.com/user-attachments/assets/468e4f38-a547-4ad7-af7b-cdcf077653ba" />
+ height="963" alt="admin_addabout" src="https://github.com/user-attachments/assets/b27b1bc0-10b2-401d-9ed1-2ffad974f148" />
+<img width="1886" height="956" alt="profile_detailmodel" src="https://github.com/user-attachments/assets/3fd8bae5-0615-42f7-9f02-66cecb729aec" />
+<img width="2880" height="4004" alt="successstoriesgallery" src="https://github.com/user-attachments/assets/3ae9eec5-c860-4720-8981-1504ffa66116" />
+<img width="2859" height="3974" alt="user_dashboard" src="https://github.com/user-attachments/assets/1d0002b6-013c-407e-8122-8140682d522c" />
+<img width="2880" height="3732" alt="profile-update" src="https://github.com/user-attachments/assets/42574359-0f15-41b8-a40f-e3f3188c746d" />
+<img width="2880" height="1568" alt="change-password" src="https://github.com/user-attachments/assets/48d2edea-d903-4479-a15e-98bc6b625814" />
