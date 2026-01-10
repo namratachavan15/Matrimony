@@ -1,0 +1,364 @@
+/* .footer-section {
+    background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+    padding: 60px 0 20px;
+    color: #fff;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    bottom: -6px;
+    left: 0;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #ccc;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #dc3545;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+  }
+   */
+
+
+   /* Footer Variables */
+:root {
+  --footer-bg: #111111;
+  --footer-text: #b0b0b0;
+  --footer-heading: #ffffff;
+  --footer-accent: #ff6b6b;
+  --footer-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Base */
+.main-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+/* Footer Top */
+.footer-top {
+  padding: 80px 0 60px;
+  border-bottom: 1px solid var(--footer-border);
+}
+
+/* Brand Section */
+.footer-brand {
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #fff, var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-tagline {
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* Footer Headings */
+.footer-heading {
+  color: var(--footer-heading);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: var(--footer-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 10px;
+}
+
+.footer-links a::before {
+  content: '→';
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: var(--accent-color);
+}
+
+.footer-links a:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+/* Contact Info */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contact-icon {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.footer-contact strong {
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Opening Hours */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list span:first-child {
+  color: var(--footer-text);
+}
+
+.hours-list span:last-child {
+  color: white;
+  font-weight: 500;
+}
+
+.hours-list .closed {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Social Icons */
+.footer-social {
+  padding-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--footer-text);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: white;
+}
+
+.social-icon.facebook:hover {
+  background: #1877f2;
+}
+
+.social-icon.twitter:hover {
+  background: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-icon.youtube:hover {
+  background: #ff0000;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  padding: 25px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  color: var(--footer-text);
+}
+
+.developer {
+  margin: 0;
+  font-size: 14px;
+  color: var(--footer-text);
+}
+
+.developer span {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .footer-top {
+    padding: 60px 0 40px;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 24px;
+  }
+  
+  .footer-heading {
+    font-size: 16px;
+  }
+  
+  .footer-description,
+  .footer-contact p,
+  .hours-list li {
+    font-size: 14px;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-top > .container > .row > div {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.footer-top > .container > .row > div:nth-child(1) { animation-delay: 0.1s; }
+.footer-top > .container > .row > div:nth-child(2) { animation-delay: 0.2s; }
+.footer-top > .container > .row > div:nth-child(3) { animation-delay: 0.3s; }
+.footer-top > .container > .row > div:nth-child(4) { animation-delay: 0.4s; }

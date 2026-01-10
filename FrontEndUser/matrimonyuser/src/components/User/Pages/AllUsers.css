@@ -1,0 +1,368 @@
+/* ========================================= */
+/*              AllUsers.css                 */
+/* ========================================= */
+
+/* PAGE BACKGROUND */
+.all-users-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%);
+  position: relative; /* if needed */
+  z-index: 1; /* lower than modal */
+}
+
+/* ----------------------------------------- */
+/*                 HEADER                    */
+/* ----------------------------------------- */
+.all-users-header {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.header-background {
+  background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.header-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ----------------------------------------- */
+/*           SEARCH / FILTER SECTION         */
+/* ----------------------------------------- */
+.search-filter-section {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(233, 30, 99, 0.1);
+}
+
+.search-filter-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  max-width: 500px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 3rem;
+  border: 2px solid #e9ecef;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 0 3px rgba(233,30,99,0.1);
+  outline: none;
+}
+
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  background:#e91e63 !important;
+}
+
+.count-badge {
+  background: linear-gradient(135deg, #e91e63, #ad1457);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+}
+
+/* ----------------------------------------- */
+/*                USERS GRID                 */
+/* ----------------------------------------- */
+.users-grid-container {
+  padding-bottom: 3rem;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* ----------------------------------------- */
+/*                 USER CARD                 */
+/* ----------------------------------------- */
+.user-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #fce4ec;
+  box-shadow: 0 5px 20px rgba(233,30,99,0.1);
+  transition: 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(233,30,99,0.15);
+}
+
+/* ----------------------------------------- */
+/*           IMAGE + OVERLAY FIXED           */
+/* ----------------------------------------- */
+
+.card-image-section {
+  position: relative;
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* DO NOT STRETCH IMAGE */
+.user-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* OVERLAY ALWAYS ON TOP */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0));
+
+  z-index: 2000 !important;
+}
+
+.overlay-like {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e91e63;
+  background: white;
+  color: #e91e63;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  z-index: 10000;
+}
+
+.overlay-like.liked {
+  background: #e91e63;
+  color: white;
+}
+
+
+.overlay-id {
+  background: white;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: black;
+  font-size: 0.9rem;
+  border: 1px solid #e91e63;
+  z-index: 10000;
+}
+
+
+.profile-badge,
+.heart-btn {
+  z-index: 20 !important;
+  position: relative;
+}
+
+
+/* Profile ID Badge */
+.profile-badge {
+  background: rgba(255,255,255,0.9);
+  color: black;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #e91e63;
+}
+
+/* Heart Button */
+.heart-btn {
+  background: white;
+  border: 2px solid #e91e63;
+  color: #e91e63;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.heart-btn:hover {
+  background: #e91e63;
+  color: white;
+}
+
+.heart-btn-liked {
+  background: #e91e63 !important;
+  color: white !important;
+  border-color: #e91e63 !important;
+}
+
+/* ----------------------------------------- */
+/*                CARD CONTENT               */
+/* ----------------------------------------- */
+.card-content {
+  padding: 1.5rem;
+}
+
+.user-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card-content .user-name{
+  color:#e91e63;
+}
+.age-height {
+  display: flex;
+  gap: 0.5rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.details-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.detail-item {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.detail-icon {
+  color: #e91e63;
+}
+
+/* ----------------------------------------- */
+/*               CARD ACTIONS                */
+/* ----------------------------------------- */
+.card-actions {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.view-profile-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #e91e63, #ad1457);
+  color: white;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/*                LOADING STATE              */
+/* ----------------------------------------- */
+.loading-container {
+  text-align: center;
+  padding: 4rem;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #fce4ec;
+  border-top-color: #e91e63;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ----------------------------------------- */
+/*                NO RESULTS                 */
+/* ----------------------------------------- */
+.no-results {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #666;
+}
+
+.no-results-icon {
+  font-size: 4rem;
+}
+
+/* ----------------------------------------- */
+/*               RESPONSIVE                  */
+/* ----------------------------------------- */
+@media (max-width: 768px) {
+  .main-title { font-size: 2rem; }
+  .users-grid { grid-template-columns: 1fr; }
+  .card-image-section { height: 250px; }
+}
+
+@media (max-width: 480px) {
+  .main-title { font-size: 1.7rem; }
+  .card-content { padding: 1rem; }
+  .card-actions { padding: 1rem; }
+}

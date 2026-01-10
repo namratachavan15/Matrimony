@@ -1,0 +1,130 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+############################################
+# OS / Editor
+############################################
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+
+############################################
+# IntelliJ IDEA
+############################################
+.idea/
+*.iml
+out/
+
+############################################
+# VS Code
+############################################
+.vscode/
+
+############################################
+# Eclipse / STS
+############################################
+.classpath
+.project
+.settings/
+.factorypath
+
+############################################
+# Maven / Gradle (Spring Boot)
+############################################
+target/
+build/
+.gradle/
+!mvnw
+!mvnw.cmd
+
+############################################
+# Java
+############################################
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+############################################
+# Spring Boot Secrets / Config
+############################################
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+.env
+
+############################################
+# Logs
+############################################
+logs/
+*.log
+
+############################################
+# Node / React
+############################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################################
+# React Build
+############################################
+build/
+dist/
+
+############################################
+# Environment Files (React)
+############################################
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+############################################
+# Coverage
+############################################
+coverage/
+
+############################################
+# Misc
+############################################
+.cache/
+temp/
+tmp/
