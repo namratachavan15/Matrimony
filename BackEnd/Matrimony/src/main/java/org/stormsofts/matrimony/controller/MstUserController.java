@@ -329,7 +329,7 @@ user.setLogCount(0);
 user.setViewcount(0);
 user.setProfileViewcount(0);
 user.setStarcount(0);
-        user.setJdate(Instant.now()); // set current timestamp
+      //  user.setJdate(Instant.now()); // set current timestamp
 
 
 
