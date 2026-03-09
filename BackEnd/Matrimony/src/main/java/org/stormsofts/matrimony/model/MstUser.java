@@ -8,6 +8,7 @@ import org.hibernate.annotations.ColumnDefault;
 
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Date;
 
@@ -114,7 +115,7 @@ public class MstUser {
 
     @Column(name = "CLocation", nullable = false, length = 500)
     @JsonProperty("cLocation")  // <-- add this
-    private String cLocation;
+    private String CLocation;
 
     @Column(name = "specs", nullable = false, length = 100)
     private String specs;
@@ -195,12 +196,17 @@ public class MstUser {
     @Column(name = "starcount", nullable = false)
     private Integer starcount=1;
 
-    @ColumnDefault("current_timestamp()")
-    @Column(name = "jdate", nullable = true)  // allow null in Hibernate
-    private Instant jdate;
+
+    @Column(name = "jdate", nullable = false, updatable = false)
+    private LocalDateTime jdate;
+
+    @PrePersist
+    protected void onCreate() {
+        this.jdate = LocalDateTime.now();
+    }
 
     @Column(name = "extend_date", nullable = false)
-    private String extendDate;
+    private String extendDate="N/A";;
 
     @ColumnDefault("0")
     @Column(name = "vstatus", nullable =false)
@@ -210,4 +216,443 @@ public class MstUser {
     @Column(name = "status", nullable = false)
     private Integer status=1;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
+    }
+
+    public String getUmobile() {
+        return umobile;
+    }
+
+    public void setUmobile(String umobile) {
+        this.umobile = umobile;
+    }
+
+    public String getAltMobile() {
+        return altMobile;
+    }
+
+    public void setAltMobile(String altMobile) {
+        this.altMobile = altMobile;
+    }
+
+    public String getWhatsappno() {
+        return whatsappno;
+    }
+
+    public void setWhatsappno(String whatsappno) {
+        this.whatsappno = whatsappno;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Integer getCnid() {
+        return cnid;
+    }
+
+    public void setCnid(Integer cnid) {
+        this.cnid = cnid;
+    }
+
+    public Integer getStid() {
+        return stid;
+    }
+
+    public void setStid(Integer stid) {
+        this.stid = stid;
+    }
+
+    public Integer getDsid() {
+        return dsid;
+    }
+
+    public void setDsid(Integer dsid) {
+        this.dsid = dsid;
+    }
+
+    public Integer getSbeid() {
+        return sbeid;
+    }
+
+    public void setSbeid(Integer sbeid) {
+        this.sbeid = sbeid;
+    }
+
+    public Integer getEdid() {
+        return edid;
+    }
+
+    public void setEdid(Integer edid) {
+        this.edid = edid;
+    }
+
+    public String getEducationDetails() {
+        return educationDetails;
+    }
+
+    public void setEducationDetails(String educationDetails) {
+        this.educationDetails = educationDetails;
+    }
+
+    public Integer getCtid() {
+        return ctid;
+    }
+
+    public void setCtid(Integer ctid) {
+        this.ctid = ctid;
+    }
+
+    public Integer getSctid() {
+        return sctid;
+    }
+
+    public void setSctid(Integer sctid) {
+        this.sctid = sctid;
+    }
+
+    public String getBirthplace() {
+        return birthplace;
+    }
+
+    public void setBirthplace(String birthplace) {
+        this.birthplace = birthplace;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public String getHeight() {
+        return height;
+    }
+
+    public void setHeight(String height) {
+        this.height = height;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getVarn() {
+        return varn;
+    }
+
+    public void setVarn(String varn) {
+        this.varn = varn;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public LocalTime getDobTime() {
+        return dobTime;
+    }
+
+    public void setDobTime(LocalTime dobTime) {
+        this.dobTime = dobTime;
+    }
+
+    public String getMarriageType() {
+        return marriageType;
+    }
+
+    public void setMarriageType(String marriageType) {
+        this.marriageType = marriageType;
+    }
+
+    public String getBloodgroup() {
+        return bloodgroup;
+    }
+
+    public void setBloodgroup(String bloodgroup) {
+        this.bloodgroup = bloodgroup;
+    }
+
+    public String getInid() {
+        return inid;
+    }
+
+    public void setInid(String inid) {
+        this.inid = inid;
+    }
+
+    public String getFincome() {
+        return fincome;
+    }
+
+    public void setFincome(String fincome) {
+        this.fincome = fincome;
+    }
+
+    public String getCurrentWork() {
+        return currentWork;
+    }
+
+    public void setCurrentWork(String currentWork) {
+        this.currentWork = currentWork;
+    }
+
+    public Integer getCstid() {
+        return cstid;
+    }
+
+    public void setCstid(Integer cstid) {
+        this.cstid = cstid;
+    }
+
+    public Integer getCdsid() {
+        return cdsid;
+    }
+
+    public void setCdsid(Integer cdsid) {
+        this.cdsid = cdsid;
+    }
+
+    public String getCLocation() {
+        return CLocation;
+    }
+
+    public void setCLocation(String cLocation) {
+        this.CLocation = cLocation;
+    }
+
+    public String getSpecs() {
+        return specs;
+    }
+
+    public void setSpecs(String specs) {
+        this.specs = specs;
+    }
+
+    public String getDrink() {
+        return drink;
+    }
+
+    public void setDrink(String drink) {
+        this.drink = drink;
+    }
+
+    public String getDiet() {
+        return diet;
+    }
+
+    public void setDiet(String diet) {
+        this.diet = diet;
+    }
+
+    public String getSmoking() {
+        return smoking;
+    }
+
+    public void setSmoking(String smoking) {
+        this.smoking = smoking;
+    }
+
+    public String getDieses() {
+        return dieses;
+    }
+
+    public void setDieses(String dieses) {
+        this.dieses = dieses;
+    }
+
+    public String getDiseaseDetails() {
+        return diseaseDetails;
+    }
+
+    public void setDiseaseDetails(String diseaseDetails) {
+        this.diseaseDetails = diseaseDetails;
+    }
+
+    public String getOtherinfo() {
+        return otherinfo;
+    }
+
+    public void setOtherinfo(String otherinfo) {
+        this.otherinfo = otherinfo;
+    }
+
+    public String getExpectation() {
+        return expectation;
+    }
+
+    public void setExpectation(String expectation) {
+        this.expectation = expectation;
+    }
+
+    public String getFamilydetails() {
+        return familydetails;
+    }
+
+    public void setFamilydetails(String familydetails) {
+        this.familydetails = familydetails;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getUprofile() {
+        return uprofile;
+    }
+
+    public void setUprofile(String uprofile) {
+        this.uprofile = uprofile;
+    }
+
+    public String getAadharBackPhoto() {
+        return aadharBackPhoto;
+    }
+
+    public void setAadharBackPhoto(String aadharBackPhoto) {
+        this.aadharBackPhoto = aadharBackPhoto;
+    }
+
+    public String getAadharFrontPhoto() {
+        return aadharFrontPhoto;
+    }
+
+    public void setAadharFrontPhoto(String aadharFrontPhoto) {
+        this.aadharFrontPhoto = aadharFrontPhoto;
+    }
+
+    public String getUpass() {
+        return upass;
+    }
+
+    public void setUpass(String upass) {
+        this.upass = upass;
+    }
+
+    public String getUrole() {
+        return urole;
+    }
+
+    public void setUrole(String urole) {
+        this.urole = urole;
+    }
+
+    public Integer getLogCount() {
+        return logCount;
+    }
+
+    public void setLogCount(Integer logCount) {
+        this.logCount = logCount;
+    }
+
+    public Integer getLogStatus() {
+        return logStatus;
+    }
+
+    public void setLogStatus(Integer logStatus) {
+        this.logStatus = logStatus;
+    }
+
+    public Integer getViewcount() {
+        return viewcount;
+    }
+
+    public void setViewcount(Integer viewcount) {
+        this.viewcount = viewcount;
+    }
+
+    public Integer getProfileViewcount() {
+        return profileViewcount;
+    }
+
+    public void setProfileViewcount(Integer profileViewcount) {
+        this.profileViewcount = profileViewcount;
+    }
+
+    public Integer getStarcount() {
+        return starcount;
+    }
+
+    public void setStarcount(Integer starcount) {
+        this.starcount = starcount;
+    }
+
+    public LocalDateTime getJdate() {
+        return jdate;
+    }
+
+    public void setJdate(LocalDateTime jdate) {
+        this.jdate = jdate;
+    }
+
+    public String getExtendDate() {
+        return extendDate;
+    }
+
+    public void setExtendDate(String extendDate) {
+        this.extendDate = extendDate;
+    }
+
+    public Integer getVstatus() {
+        return vstatus;
+    }
+
+    public void setVstatus(Integer vstatus) {
+        this.vstatus = vstatus;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
 }
