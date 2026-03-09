@@ -3,6 +3,7 @@ package org.stormsofts.matrimony.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -26,11 +27,13 @@ import java.util.Optional;
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = "http://localhost:5173", allowedHeaders = "*")
 
-@RequiredArgsConstructor
+
 public class AuthController {
 
-    private final MstUserRepository mstUserRepository;
-    private final PasswordEncoder passwordEncoder;
+    @Autowired
+    private  MstUserRepository mstUserRepository;
+    @Autowired
+    private  PasswordEncoder passwordEncoder;
 
 
     @PostMapping(value = "/register", consumes = "multipart/form-data")
@@ -97,6 +100,7 @@ public class AuthController {
         user.setStid(0);
         user.setAge(0);
         user.setSctid(0);
+
  user.setCnid(0);
  user.setCtid(0);
  user.setSbeid(0);
@@ -178,7 +182,7 @@ public class AuthController {
 
         // update login info
         user.setLogCount(user.getLogCount() + 1);
-        user.setJdate(Instant.now());
+      //  user.setJdate(Instant.now());
         user.setLogStatus(1);
         mstUserRepository.save(user);
 
