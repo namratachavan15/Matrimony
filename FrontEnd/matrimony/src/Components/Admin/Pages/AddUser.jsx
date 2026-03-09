@@ -24,10 +24,11 @@ const AddUser = ({ editingUser, setEditingUser }) => {
   const { states, fetchStatesByCountry } = useStateContextCustom();
   const { districts, fetchDistrictsByState } = useDistrictContext();
   const { bloods, loadingBloods, bloodError } = useBloodContext();
+ 
 
   const [casts, setCasts] = useState([]);
-  const { incomes, loading, error } = useIncomeContext(); 
-  const { colors, loadingColors, colorError } = useColorContext();
+  const { incomes, loading, error,fetchIncomes } = useIncomeContext(); 
+  const { colors, loadingColors, colorError,fetchColors } = useColorContext();
   
   const [activeTab, setActiveTab] = useState("personal");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -94,6 +95,9 @@ const AddUser = ({ editingUser, setEditingUser }) => {
     fetchMarriages();
     fetchHeights();
     fetchCountries();
+    fetchColors();
+    fetchIncomes();
+    
 
     const fetchCasts = async () => {
       try {
